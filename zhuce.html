@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+	<link rel="stylesheet" href="./css/zhuce.css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="header-content">
+			<div class="logo">
+				<h1><span>LOGO</span></h1>
+			</div>
+			<div class="banner">
+				<ul class="banner-list">
+					<li><a href="./index.html">网站首页</a></li>
+					<li><a href="./anlie.html">经典案例</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li><a href="./item.html">设计团队</a></li>
+					<li><a href="./denglv.html">登录页面</a></li>
+					<li><a href="./zhuce.html">注册页面</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="form">
+		<div class="kong"></div>
+		<form class="zhuce-box" action="./denglv.html" method="post" name="myForm" onsubmit="return checkForm()">
+			<div class="form-group">
+				<span class="span-group">
+					<i class="shouji"></i>
+				</span>
+				<input type="text" placeholder="手机" name="userInput" id="user" onblur="checkUser()">
+			</div>
+			<div class="kong" id="userInfo"></div>
+			<div class="form-group">
+				<span class="span-group">
+					<i class="mima fa fa-unlock-alt" aria-hidden="true"></i>
+				</span>
+				<input  type="password" id="pwd" name="pwdInput" onblur="checkPwd()" placeholder="密码">
+			</div>
+			<div class="kong" id="pwdInfo"></div>
+			<div class="form-group">
+				<span class="span-group">
+					<i class="mima fa fa-unlock-alt" aria-hidden="true"></i>
+				</span>
+				<input placeholder="重复密码" type="password" name="repwdInput" id="repwd" onblur="checkRepwd()">
+			</div>
+			<div class="kong" id="repwdInfo"></div>
+			<div class="input-group">
+				<span class="span-group">
+					<i class="yanzheng fa fa-shield" aria-hidden="true"></i>
+				</span>
+				<input type="text" placeholder="验证码">
+				<div class="col">
+					<button class="btn" type="button">获取验证码</button>
+				</div>
+			</div>
+			<div class="kong" ></div>
+			<div class="form-group" style="border:none">
+				<button class="start" type="submit">立即注册</button>
+			</div>
+			<div class="kong"></div>
+			<div class="form-line">
+				<a href="./denglv.html">已有账号去登录！</a>
+			</div>
+			<div class="kong"></div>
+		</form>
+		<div class="kong"></div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer-contant">
+			<div class="kong"></div>
+			<div class="footer-kuang">
+				<div class="footer-list">
+					<p style="color: rgb(255, 255, 255); font-size: 14px;">关于我们&nbsp;&nbsp;|&nbsp;&nbsp;联系我们&nbsp;&nbsp;|&nbsp;&nbsp;友情链接&nbsp;&nbsp;|&nbsp;&nbsp;帮助中心&nbsp;&nbsp;|&nbsp;&nbsp;意见反馈&nbsp;&nbsp;|&nbsp;&nbsp;法律声明</p>
+				</div>
+			</div>
+				<div class="footer-kuang">
+					<p style="color: rgb(187, 187, 187); font-size: 12px;">©2016zhuangxiu.com保留所有权</p>
+				</div>
+				<div class="footer-kuang">
+					<p style="color: rgb(170, 170, 170);">中国装修网 2318974204号</p>
+				</div>
+		</div>
+	</div>
+	<!-- 固定侧边栏 -->	
+	<div class="fix">
+		<div class="fix-box1">
+			<a href="#">
+				<span></span>
+				在线客服
+			</a>
+			<div class="fix-help">
+				<h3>热门咨询</h3>
+				<div class="guan">
+					<a href="#" target="_self" tigle="关闭"></a>
+				</div>
+				<div class="wenti">
+					<a class="curr" href="">装修咨询</a>
+					<a href="">价格咨询</a>
+					<a href="">品牌咨询</a>
+				</div>
+				<div class="wen-li">
+					<div class="wen-left">
+						<ol>
+							<li><a href="">东山国际风格</a></li>
+							<li><a href="">温馨家园风格</a></li>
+							<li><a href="">意花家园风格</a></li>
+						</ol>
+					</div>
+					<div class="wen-left">
+						<ol>
+							<li><a href="">5-10万</a></li>
+							<li><a href="">10-15万</a></li>
+							<li><a href="">15万以上</a></li>
+						</ol>
+					</div>
+					<div class="wen-left">
+						<ol>
+							<li><a href="">大牌木材建造</a></li>
+							<li><a href="">大牌木材建造</a></li>
+							<li><a href="">大牌木材建造</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fix-box2">
+			<a href="">
+				<span></span>
+				帮助中心
+			</a>
+		</div>
+		<div class="fix-box3">
+			<a href="#top" style="border-bottom:none">
+				<span></span>
+				返回顶部
+			</a>
+		</div>
+	</div>
+
+
+	<!-- 兼容IE8以上的 -->
+	<!--[if gt IE 8]> <!-->
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<!--<![endif]-->
+
+	<!-- 兼容包括IE8以下的浏览器 -->
+	<!--[if lte IE 8]>
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+
+	<script src="./js/zhuce.js"></script>
+</body>
+</html>

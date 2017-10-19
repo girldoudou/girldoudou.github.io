@@ -1,0 +1,371 @@
+/*通用样式*/
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.kong{
+	width: 100%;
+	height: 36px;
+	box-sizing:border-box;
+	font-size:16px;
+	line-height:36px;
+	text-align:center;
+	font-family : "Microsoft YaHei",sans-serif;
+}
+/*头部的样式*/
+.header{
+	max-width: 100%;
+	min-height: 70px;
+	background:#eee;
+}
+.header-content{
+	margin:0px 110px 0px 110px;	
+}
+.header-block{
+	width: 100%;
+	height: 70px;
+}
+.logo{
+	width:25%;
+	height: 70px;
+	float:left;
+}
+.logo span{
+	font-size:36px;
+	color:#565b5b;
+	line-height:70px;
+	text-align:center;
+	font-family : "Microsoft YaHei",sans-serif;
+	float:left;
+}
+.banner{
+	width: 74%;
+	height: 70px;
+	float:right;
+	
+}
+.banner-list{
+	float:right;
+	width:77%;
+	height: 66px;	
+}
+.banner-list li{
+	display: inline-block;
+	width: 15%;
+	height: 66px;
+	text-align:center;
+	line-height:66px;
+}
+.banner-list li a{
+	display:block;
+	height: 66px;
+	font-size:20px;
+	color:#7a7a7a;
+	font-weight:bold;
+}
+.banner-list li a:hover{
+	background:#f27521;
+	color:#fff;
+}
+.form{
+	position:relative;
+	background:#ccc;
+	width: 100%;
+	height:100%;
+}
+.zhuce-box{
+	position:relative;
+	width: 500px;
+	
+	background:#fff;
+	margin:0 auto;
+	box-sizing:border-box;
+}
+.zhuce-box:first-child{
+	padding-top:30px;
+}
+.form-group:first-child{
+	margin-top:30px;
+}
+.form-group{
+	position:relative;
+	width: 440px;
+	height: 43px;
+	margin:0 30px 0px;
+	display:inline-block;
+	box-sizing:border-box;
+}
+
+.shouji{
+	width: 20px;
+	height: 26px;
+	display:inline-block;
+	margin:4px 10px;
+	background:url("../images/icon-desktop.png") no-repeat 2px -170px;
+}
+.span-group{
+	box-sizing:border-box;
+	float:left;
+	background:#eee;
+	display:block;
+	width: 45px;
+	height: 43px;
+	border:1px solid #aaa;
+	border-right:none;
+}
+.form-group>input{
+	position:absolute;
+	right:0;
+	width: 395px;
+	height: 43px;
+	float:right;
+	padding-left:10px;
+	box-sizing:border-box;
+	border:none;
+	border:1px solid #aaa;
+}
+.input-group{
+	position:relative;
+	width: 440px;
+	height: 43px;
+	margin:0 30px 0px;
+	display:inline-block;
+	box-sizing:border-box;	
+}
+.input-group>input{
+	position:absolute;
+	left:45px;
+	padding-left:10px;
+	border:none;
+	border:1px solid #aaa;
+	width: 199px;
+	height: 43px;
+	box-sizing:border-box;
+}
+.mima{
+	color:#aaa;
+	margin:13px 17px;
+}
+.yanzheng{
+	color:#aaa;
+	margin:13px 17px;
+}
+.col{
+	position:absolute;
+	right:-15px;
+	top:0px;
+	width: 195px;
+	height: 43px;
+}
+.btn{
+	width: 165px;
+	height: 34px;
+	margin:4.5px 15px;
+	border:none;
+	color:#fff;
+	background-color:#5cb85c;
+	border:1px solid #4cae4c;
+	font-size:14px;
+	cursor:pointer;
+}
+.start{
+	width: 100%;
+	height: 100%;
+	text-align:center;
+	line-height:43px;
+	border:none;
+	background-color:#337ab7;
+	border:1px solid #2e6da4;
+	color:#fff;
+	font-size:28px;
+	cursor:pointer;
+}
+.form-line{
+	width: 440px;
+	height: 20px;
+}
+.form-line>a{
+	float:right;
+	color:#337ab7;
+	
+}
+.form-line>a:hover{
+	color:#62a8ea;
+}
+
+
+/*脚本样式设置*/
+.footer{
+	width: 100%;
+	height: 210px;
+	background:#000000;
+	font-family : "Microsoft YaHei",sans-serif;
+}
+.footer-contant{
+	height: 169px;
+	margin:0 110px 0 110px;
+}
+.footer-kuang{
+	width: 100%;
+	height: 31px;
+	line-height:31px;
+	text-align:center;
+}
+.footer-list{
+	width: 100%;
+	height: 21px;
+	padding-top:5px;
+	box-sizing:border-box;
+}
+.footer-list p{
+	text-align:center;
+
+}
+/*固定栏*/
+.fix{
+	width: 60px;
+	height: 210px;
+	position:fixed;
+	right:10px;
+	bottom:30px;
+	border:1px solid #ccc;
+	background:#fff;
+	z-index: 22;
+}
+.fix-box1,.fix-box2,.fix-box3{
+	width: 60px;
+	height: 70px;
+	
+}
+.fix-box1>a,.fix-box2>a,.fix-box3>a{
+	position:relative;
+	padding-top:40px;
+	text-align:center;
+	z-index:2;
+	display:block;
+	width: 58px;
+	height: 68px;
+	border-bottom:1px solid #ccc;
+	font-size:12px;
+	box-sizing: border-box;
+	color:#000;
+	overflow:hidden;
+
+}
+.fix-box1>a span,.fix-box2>a span,.fix-box3>a span{
+	position:absolute;
+	top:10px;
+	left:14px;
+	display:block;
+	width: 30px;
+	height: 30px;
+	overflow:hidden;
+}
+.fix-box1>a span{
+	background:url("../images/28.png") no-repeat 0px 0px;
+}
+.fix-box2>a span{
+	background:url("../images/28.png") no-repeat -32px 0px;
+}
+.fix-box3>a span{
+	background:url("../images/28.png") no-repeat -63px 0px;
+}
+.fix-box1>a:hover,.fix-box2 a:hover,.fix-box3 a:hover{
+	color:red;
+}
+.fix-box1>a span:hover{
+	background:url("../images/28.png") no-repeat 0px -30px;
+}
+.fix-box2>a span:hover{
+	background:url("../images/28.png") no-repeat -32px -30px;
+}
+.fix-box3>a span:hover{
+	background:url("../images/28.png") no-repeat -63px -30px;
+}
+.fix-help{
+	position:absolute;
+	right:78px;
+	top:-1px;
+	border:1px solid #ccc;
+	width: 418px;
+	height: 302px;
+	background:rgba(255,255,255,.5);
+ 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff);
+	overflow:hidden;	
+	z-index:222;
+	display:none;
+}
+.fix-help>h3{
+	text-align:center;
+	width: 100%;
+	height: 45px;
+	line-height:45px;
+
+}
+.gaun,.guan>a{
+	position:absolute;
+	left: 0;
+	top: 0;
+	display:block;
+	width: 28px;
+	height: 28px;
+	background:url("../images/28.png") no-repeat -27px -198px;
+	box-sizing:border-box;
+}
+.guan>a:hover{
+	background:url("../images/28.png") no-repeat 2px -198px;
+}
+.wenti{
+	width: 365px;
+	margin:0 auto;
+	/*padding-bottom:5px;*/
+}
+.wenti>a{
+	float:left;
+	display:inline-block;
+	width: 115px;
+	border-bottom: none;
+	font-size:16px;
+	height:46px;
+	font-family : "Microsoft YaHei",sans-serif;
+	text-align:center;
+	padding-top:0;
+	box-sizing:border-box;
+	color:#000;
+	border-bottom:#eee 3px solid;
+	
+}
+a.curr{
+	border-bottom:#ef4222 3px solid;
+	color:#ef4222;
+}
+.wen-li{
+	position:relative;
+	width: 365px;
+	height: 150px;
+	margin:0 auto;
+	margin-top:55px;
+}
+.wen-li div{
+	position:absolute;
+	left:30px;
+	top:10px;
+	font-size:20px;
+	width: 300px;
+	box-sizing:border-box;
+	color:#000;
+	display:none;
+}
+.wen-li li a{
+	line-height:35px;
+	color:#000;
+}
+.wen-li li a:hover{
+	color:red;
+}
